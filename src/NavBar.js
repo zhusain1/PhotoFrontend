@@ -37,6 +37,9 @@ const NavBar = () => {
                 <DropdownItem>
                     <Link to="/gallery/backgrounds">Locations</Link>
                 </DropdownItem>
+                <DropdownItem>
+                    <Link to="/gallery/products">Products</Link>
+                </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>

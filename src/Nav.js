@@ -25,6 +25,10 @@ class Nav extends React.Component{
                     render={(props) => (
                       <Gallery {...props} folderName={'backgrounds'} 
                 />)}/>
+                <Route key = "product" exact path='/gallery/products'
+                    render={(props) => (
+                      <Gallery {...props} folderName={'products'} 
+                />)}/>
             </Switch>
         </Router>
     </div>
