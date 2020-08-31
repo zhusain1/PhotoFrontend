@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+@import "~react-image-gallery/styles/css/image-gallery.css";
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+body{
+    background-color: #11151C !important;
+    font-family: 'Oswald', sans-serif !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.bg {
+    background-image: url(IMG_8778.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
+
+.bg h1{
+    color: white;
+    text-align: center;
+    margin: 0px auto;
+    display: block;
+    padding-top: 150px;
+    font-family: 'Allura', cursive;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bg-dark {
+    background-color: #161925 !important;
 }
 
-.App-link {
-  color: #61dafb;
+nav.navbar.navbar-expand-md.navbar-light{
+    padding-left: 70px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbar-light .navbar-brand {
+    color: white !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white !important;
+}
+
+.dropdown-menu.dropdown-menu-right.show {
+    background-color: #161925!important;
+}
+
+a {
+    color: white !important;
+}
+
+dropdown-item:focus, .dropdown-item:hover {
+    color: white;
+    text-decoration: none;
+    background-color: black !important;
+}
+
+.navbar-light .navbar-toggler-icon{
+    background-image: url('./menu.png') !important;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
