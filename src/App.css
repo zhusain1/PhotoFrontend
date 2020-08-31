@@ -57,3 +57,8 @@ dropdown-item:focus, .dropdown-item:hover {
 .navbar-light .navbar-toggler-icon{
     background-image: url('./menu.png') !important;
   }
+
+  .Error{
+      text-align: center;
+      color: white;
+  }

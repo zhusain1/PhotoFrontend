@@ -3,6 +3,7 @@ import './App.css';
 import App from './App';
 import Gallery from './Gallery'
 import NavBar from './NavBar'
+import ErrorPage from './ErrorPage'
 import {
     BrowserRouter as Router,
     Route,
@@ -17,7 +18,7 @@ class Nav extends React.Component{
             <NavBar/>
             <Switch>
                 <Route exact path="/" component={App} /> 
-                <Route  key="engagement" exact path='/gallery/engagement'
+                <Route key="engagement" exact path='/gallery/engagement'
                     render={(props) => (
                       <Gallery {...props} folderName={'engagement'} />
                 )}/>
@@ -29,6 +30,7 @@ class Nav extends React.Component{
                     render={(props) => (
                       <Gallery {...props} folderName={'products'} 
                 />)}/>
+                 <Route component={ErrorPage} />
             </Switch>
         </Router>
     </div>
