@@ -35,7 +35,7 @@ const NavBar = () => {
                     <Link to="/gallery/engagement">Proposal</Link>
                 </DropdownItem>
                 <DropdownItem>
-                    <Link to="/gallery/background">Locations</Link>
+                    <Link to="/gallery/backgrounds">Locations</Link>
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>

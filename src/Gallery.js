@@ -8,12 +8,11 @@ class Gallery extends React.Component{
 
   constructor(props){
     super(props);
-    const { match: { params } } = this.props;
 
-    this.state = { images: [], folderName: params.folder};
+    console.log(this.props);
+    this.state = { images: [], folderName: this.props.folderName};
 
 }
-
 
   componentDidMount(){
 

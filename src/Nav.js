@@ -17,7 +17,14 @@ class Nav extends React.Component{
             <NavBar/>
             <Switch>
                 <Route exact path="/" component={App} /> 
-                <Route exact path="/Gallery/:folder" component={Gallery} />
+                <Route  key="engagement" exact path='/gallery/engagement'
+                    render={(props) => (
+                      <Gallery {...props} folderName={'engagement'} />
+                )}/>
+                <Route key = "backgrounds" exact path='/gallery/backgrounds'
+                    render={(props) => (
+                      <Gallery {...props} folderName={'backgrounds'} 
+                />)}/>
             </Switch>
         </Router>
     </div>
