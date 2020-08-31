@@ -32,7 +32,8 @@ class Gallery extends React.Component{
   render(){
     return (
       <div className="Gallery">
-        <ImageGallery items={this.state.images} />
+        {this.state.images.length > 0 &&
+        <ImageGallery items={this.state.images}  lazyLoad={true}/>}
       </div>
     );
   }
