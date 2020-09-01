@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import axios from 'axios';
 import ImageGallery from 'react-image-gallery';
+import { Spinner } from 'reactstrap';
 
 class Gallery extends React.Component{
 
@@ -32,8 +33,12 @@ class Gallery extends React.Component{
   render(){
     return (
       <div className="Gallery">
-        {this.state.images.length > 0 &&
-        <ImageGallery items={this.state.images}  lazyLoad={true}/>}
+        {this.state.images.length > 0 ?
+        <ImageGallery items={this.state.images}/>
+        :<div className="load">
+          <Spinner color="white" />
+        </div>
+        }
       </div>
     );
   }

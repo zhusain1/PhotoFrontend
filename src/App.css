@@ -7,6 +7,11 @@ body{
     font-family: 'Oswald', sans-serif !important;
 }
 
+.load{
+    text-align: center;
+    margin-top: 50px;
+}
+
 .bg {
     background-image: url(IMG_8778.jpg);
     height: 100vh;
