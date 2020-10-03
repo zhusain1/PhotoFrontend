@@ -40,6 +40,9 @@ const NavBar = () => {
                 <DropdownItem>
                     <Link to="/gallery/products">Products</Link>
                 </DropdownItem>
+                <DropdownItem>
+                    <Link to="/gallery/portraits">Portraits</Link>
+                </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
