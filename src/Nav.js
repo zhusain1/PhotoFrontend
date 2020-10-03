@@ -30,6 +30,10 @@ class Nav extends React.Component{
                     render={(props) => (
                       <Gallery {...props} folderName={'products'} 
                 />)}/>
+                <Route key = "portraits" exact path='/gallery/portraits'
+                    render={(props) => (
+                      <Gallery {...props} folderName={'portraits'} 
+                />)}/>
                  <Route component={ErrorPage} />
             </Switch>
         </Router>
